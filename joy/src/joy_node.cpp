@@ -412,7 +412,7 @@ public:
         }
         if (first_fault)
         {
-          ROS_ERROR("Couldn't open joystick %s. Will retry every second.", joy_dev_.c_str());
+          ROS_WARN("Couldn't open joystick %s. Will retry every second.", joy_dev_.c_str());
           first_fault = false;
         }
         sleep(1.0);
